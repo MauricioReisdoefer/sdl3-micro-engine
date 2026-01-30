@@ -12,6 +12,6 @@ typedef struct
 } Player;
 
 void Player_Update(Component *self, float dt);
-Player *Player_Create(float x, float y);
+Player *Player_Create(float speed);
 
 #endif

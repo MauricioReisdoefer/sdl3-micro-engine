@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "components/component.h"
 #include "color.h"
 
 const int HEIGHT = 500;
