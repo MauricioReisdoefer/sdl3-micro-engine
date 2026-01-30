@@ -1,3 +1,6 @@
+#ifndef TRANSFROM_H
+#define TRANSFROM_H
+
 #include "component.h"
 
 typedef struct
@@ -10,3 +13,5 @@ typedef struct
     float scaleX;
     float scaleY;
 } Transform;
+
+#endif

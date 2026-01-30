@@ -1,3 +1,7 @@
+#ifndef COMPONENT_H
+#define COMPONENT_H
+
+typedef struct GameObject GameObject;
 typedef struct Component Component;
 
 typedef void (*ComponentUpdateFunction)(Component *self, float dt);
@@ -9,8 +13,11 @@ typedef enum
     COMPONENT_RENDER,
 } ComponentType;
 
-struct Component
+typedef struct Component
 {
     ComponentType type;
     ComponentUpdateFunction update;
-};
+    GameObject *owner;
+} Component;
+
+#endif
