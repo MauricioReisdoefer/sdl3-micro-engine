@@ -50,7 +50,7 @@ int main(void)
     transformObject->scaleY = 25.0f;
 
     rigidbody->mass = 1.0f;
-    rigidbody->friction = 15.0f;
+    rigidbody->friction = 7.0f;
 
     // GAME LOOP
     int isRunning = 1;
@@ -65,17 +65,6 @@ int main(void)
         Uint64 currentTime = SDL_GetTicks();
         deltaTime = (currentTime - lastTime) / 1000.0f;
         lastTime = currentTime;
-
-        const bool *keys = SDL_GetKeyboardState(NULL);
-
-        if (keys[SDL_SCANCODE_W])
-            Rigidbody_AddForce(rigidbody, 0, -500);
-        if (keys[SDL_SCANCODE_S])
-            Rigidbody_AddForce(rigidbody, 0, 500);
-        if (keys[SDL_SCANCODE_D])
-            Rigidbody_AddForce(rigidbody, 500, 0);
-        if (keys[SDL_SCANCODE_A])
-            Rigidbody_AddForce(rigidbody, -500, 0);
 
         while (SDL_PollEvent(&event))
         {
