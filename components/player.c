@@ -29,7 +29,7 @@ Player *Player_Create(float speed)
     if (!Player)
         return NULL;
 
-    Player->base.type = COMPONENT_PLAYER;
+    Player->base.type = COMPONENT_SCRIPT;
     Player->base.update = Player_Update;
 
     Player->speed = speed;

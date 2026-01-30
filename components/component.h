@@ -11,7 +11,7 @@ typedef enum
     COMPONENT_TRANSFORM,
     COMPONENT_RIGIDBODY,
     COMPONENT_RENDER,
-    COMPONENT_PLAYER
+    COMPONENT_SCRIPT
 } ComponentType;
 
 typedef struct Component
