@@ -1,8 +1,8 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-#include "components/component.h"
-#include "components/script.h"
+#include "component.h"
+#include "script.h"
 
 #define MAX_COMPONENTS 16
 

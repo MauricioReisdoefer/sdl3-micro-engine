@@ -1,5 +1,5 @@
 #include "gameobject.h"
-#include "components/script.h"
+#include "script.h"
 
 #include <stdlib.h>
 

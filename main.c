@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "components/component.h"
-#include "components/player.h"
-#include "components/render.h"
-#include "components/rigidbody.h"
-#include "components/script.h"
-#include "components/transform.h"
+#include "component.h"
+#include "player.h"
+#include "render.h"
+#include "rigidbody.h"
+#include "script.h"
+#include "transform.h"
 #include "gameobject.h"
 #include "color.h"
 
@@ -26,7 +26,7 @@ int main(void)
         return -1;
     }
 
-    SDL_Window *window = SDL_CreateWindow("BULLET HELL", WIDTH, HEIGHT, SDL_WINDOW_MAXIMIZED);
+    SDL_Window *window = SDL_CreateWindow("TEST SCRIPTS", WIDTH, HEIGHT, SDL_WINDOW_MAXIMIZED);
     if (window == NULL)
     {
         SDL_Log("Error on initializing SDL_Window");
